@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import mail from "../assets/mail-icon.png";
 import bell from "../assets/bell-icon.png";
 import { Typography } from "@mui/material";
-
+import React from 'react';
 const Navbar = styled('div')`
     position: relative;
     float: right;

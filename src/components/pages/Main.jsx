@@ -8,6 +8,7 @@ import Main from '../Main';
 import Congrats from '../Congrats';
 import logo from '../../assets/menu-icon.png';
 import cross from '../../assets/cross-violet.png';
+import SliderPage from '../slider/SliderPage';
 
 const Icon = styled('img')`
     width: 25px;
@@ -78,7 +79,7 @@ const MainPage = () => {
                 <Routes>
                     <Route path="/" element={<Main isopen={opened}/>} />
                     <Route path="/bd" element={<Congrats/>} />
-
+                    <Route path="/news" element={<SliderPage/>} />
                 </Routes>
                 </MainWrapper>
             </Wrapper>

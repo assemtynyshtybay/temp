@@ -15,9 +15,6 @@ const Wrapper = styled('div')`
     color: #fff;
     height: 100%;
 `
-const Container = styled('ul')`
-    display: block;
-`
 const style = {
   width: '100%',
   maxWidth: 360,
@@ -31,12 +28,12 @@ const Profile = styled('div')`
     display: block-inline;
 `
 const Menu = () => {
-    const [token, setToken] = useState('');
+    const [token] = useState('');
     const nav = useNavigate();
     return(
         <Wrapper>
             <Img src={logo} />
-            <span className="underline">assem</span>
+            <span className="underline"></span>
             <List sx={style} component="nav" aria-label="mailbox folders">
                 <ListItem button onClick={()=>nav('/')}>
                     <ListItemText primary="Запросы" />
@@ -63,7 +60,14 @@ const Menu = () => {
                     </Profile>
                 ):
                 (
-                    null
+                    <Profile>
+                        <Divider sx={{color:'white'}}  />
+                        <Box>
+                        <Typography>Name</Typography>
+                        <Typography>mail</Typography></Box>
+                        <Divider light />
+                        <Button sx={{color: '#59496A',left:'50%', transform: 'translate(-50%,25%)'}} size="small">Выход</Button>
+                    </Profile>
                 )
             }
             

@@ -2,13 +2,6 @@ import { styled } from '@mui/material';
 import React, { useState } from 'react';
 import {Button, Stack, SnackbarContent} from '@mui/material';
 
-const Img = styled('img')`
-    width: 100px;
-    background-color:gray;
-    position: fixed;
-    right: 10px;
-    top: 50px;
-`
 const Wrapper = styled('div')`
     margin-bottom: 10px;
     margin-left: 10px;
