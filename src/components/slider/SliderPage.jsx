@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const SliderPage = () => {
     const [images,setImages] = useState(['https://millionstatusov.ru/pic/statpic/all8/5e04c21a52a39.jpg']);
-    const [imageUrl,setImageUrl] = useState('gg')
+    const [imageUrl,setImageUrl] = useState('')
     const addImage= () => {
         setImages([...images,imageUrl])
         setImageUrl("")

@@ -1,6 +1,7 @@
 import { styled } from '@mui/material';
 import React, { useState } from 'react';
 import {Button, Stack, SnackbarContent} from '@mui/material';
+import Confetti from 'react-confetti';
 
 const Wrapper = styled('div')`
     margin-bottom: 10px;
@@ -41,9 +42,14 @@ const Congrats = () => {
         {
             open ?
             (
-                <Modal>
-                    Поздравляем!
-                </Modal>
+                <>
+                    <Confetti
+                        />
+                    <Modal>
+                        Поздравляем!   
+                        
+                    </Modal>
+                </>
             ):
             (
                 <div>
