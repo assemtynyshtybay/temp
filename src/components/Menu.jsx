@@ -45,6 +45,9 @@ const Menu = () => {
                 <ListItem button onClick={()=>nav('/bd')}>
                     <ListItemText primary="Ваши коллеги" />
                 </ListItem>
+                <ListItem button onClick={()=>nav('/actors')}>
+                    <ListItemText primary="Наши спонсоры" />
+                </ListItem>
                 <Divider light />
             </List>
             {

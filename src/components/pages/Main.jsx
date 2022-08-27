@@ -9,6 +9,7 @@ import Congrats from '../Congrats';
 import logo from '../../assets/menu-icon.png';
 import cross from '../../assets/cross-violet.png';
 import SliderPage from '../slider/SliderPage';
+import Actors from '../Actors';
 
 const Icon = styled('img')`
     width: 25px;
@@ -48,6 +49,7 @@ const Head = styled('div')`
     margin-right: 0px;
     padding: 10px 10px;
     background-color: #2C2C2C;
+    z-index: 1;
 `
 const Img = styled('img')`
     margin: auto 0;
@@ -80,6 +82,7 @@ const MainPage = () => {
                     <Route path="/" element={<Main isopen={opened}/>} />
                     <Route path="/bd" element={<Congrats/>} />
                     <Route path="/news" element={<SliderPage/>} />
+                    <Route path="/actors" element={<Actors />} />
                 </Routes>
                 </MainWrapper>
             </Wrapper>
